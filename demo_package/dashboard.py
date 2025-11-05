@@ -39,7 +39,7 @@ def st_suppress_stdout():
 # Load environment variables early so PROCESSED_DATA_DIR is available
 load_dotenv()
 SHOW_DEBUG = os.getenv("DEBUG", "0").lower() in {"1", "true", "yes"}
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = './data_processed'
 
 # ==============================================================================
 #  MODEL ARCHITECTURE (Matching the notebook)
@@ -115,7 +115,7 @@ class TwoTowerModel(nn.Module):
 @st.cache_resource
 def load_all_assets():
     default_processed = os.path.join(BASE_DIR, "data", "processed")
-    PROCESSED_DATA_DIR = os.getenv("PROCESSED_DATA_DIR", default_processed)
+    PROCESSED_DATA_DIR = './data_processed'
     assets = {}
 
     def _require(path, description):
