@@ -1,0 +1,14 @@
+{
+  "userid": 7806,
+  "productid": 751,
+  "categoryid": 25,
+  "quantity_bucket": 4,
+  "price_bucket": 4,
+  "commission_bucket": 4,
+  "margin_bucket": 4,
+  "month": 12,
+  "weekday": 7,
+  "is_weekend": 2,
+  "product_type_encoded": 10,
+  "variant_sellable_encoded": 3
+}
